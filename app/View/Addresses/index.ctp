@@ -53,11 +53,11 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Address'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Esschools'), array('controller' => 'esschools', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Esschools'), array('controller' => 'esschools', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Hsschools'), array('controller' => 'hsschools', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Hsschools'), array('controller' => 'hsschools', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Msschools'), array('controller' => 'msschools', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Msschools'), array('controller' => 'msschools', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Elemenetary Schools'), array('controller' => 'esschools', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Elemenetary School'), array('controller' => 'esschools', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List High Schools'), array('controller' => 'hsschools', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New High School'), array('controller' => 'hsschools', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Middle Schools'), array('controller' => 'msschools', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Middle School'), array('controller' => 'msschools', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

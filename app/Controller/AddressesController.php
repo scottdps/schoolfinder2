@@ -13,9 +13,8 @@ class AddressesController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
-      
-        public $uses = array('Address','Street');
+	public $components = array('Paginator'); 
+        public $uses = array('Address','Street','Esschool','Msschool','Hsschool');
         
         
         public function streetChooser(){
@@ -152,9 +151,9 @@ public function addressAjax()
 				$this->Session->setFlash(__('The address could not be saved. Please, try again.'));
 			}
 		}
-		$esschools = $this->Address->Esschool->find('list');
-		$hsschools = $this->Address->Hsschool->find('list');
-		$msschools = $this->Address->Msschool->find('list');
+		$esschools = $this->Esschool->find('list');
+		$hsschools = $this->Hsschool->find('list');
+		$msschools = $this->Msschool->find('list');
 		$this->set(compact('esschools', 'hsschools', 'msschools'));
 	}
 
@@ -180,9 +179,9 @@ public function addressAjax()
 			$options = array('conditions' => array('Address.' . $this->Address->primaryKey => $id));
 			$this->request->data = $this->Address->find('first', $options);
 		}
-		$esschools = $this->Address->Esschool->find('list');
-		$hsschools = $this->Address->Hsschool->find('list');
-		$msschools = $this->Address->Msschool->find('list');
+		$esschools = $this->Esschool->find('list');
+		$hsschools = $this->Hsschool->find('list');
+		$msschools = $this->Msschool->find('list');
 		$this->set(compact('esschools', 'hsschools', 'msschools'));
 	}
 
