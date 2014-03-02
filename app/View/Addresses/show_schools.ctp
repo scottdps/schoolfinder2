@@ -12,15 +12,34 @@
            if(isset($schoolList[0]['Esschools']['name'])){
                 echo '<div class="schoolName">'.$schoolList[0]['Esschools']['name'].'</div>';
                 echo '<div class="schoolPhone">'.$schoolList[0]['Esschools']['phone'].'</div>';
-                echo '<div class="schoolPhone">'.$schoolList[0]['Esschools']['url'].'</div>';
+                
+                
+                echo '<div class="schoolWeb">';
+                echo $this->Html->link(
+                                $schoolList[0]['Esschools']['name'].' Website',
+                                'http://'.$schoolList[0]['Esschools']['url'],
+                                array('class' => 'button', 'target' => '_blank')
+                                ).'</div>';
+                
+
 
                 echo '<div class="schoolName">'.$schoolList[0]['Msschools']['name'].'</div>';
                 echo '<div class="schoolPhone">'.$schoolList[0]['Msschools']['phone'].'</div>';
-                echo '<div class="schoolPhone">'.$schoolList[0]['Esschools']['url'].'</div>';
+                               echo '<div class="schoolWeb">';
+                echo $this->Html->link(
+                                $schoolList[0]['Msschools']['name'].' Website',
+                                'http://'.$schoolList[0]['Msschools']['url'],
+                                array('class' => 'button', 'target' => '_blank')
+                                ).'</div>';
                 
                 echo '<div class="schoolName">'.$schoolList[0]['Hsschools']['name'].'</div>';
                 echo '<div class="schoolPhone">'.$schoolList[0]['Hsschools']['phone'].'</div>';
-                echo '<div class="schoolPhone">'.$schoolList[0]['Esschools']['url'].'</div>';
+                echo '<div class="schoolWeb">';
+                echo $this->Html->link(
+                                $schoolList[0]['Hsschools']['name'].' Website',
+                                'http://'.$schoolList[0]['Hsschools']['url'],
+                                array('class' => 'button', 'target' => '_blank')
+                                ).'</div>';
        } else {
            echo '<div class="schoolName">Sorry, we could not find your address"</div>';
        }	
@@ -37,8 +56,7 @@
 
 	<ul>
 <li><a href="http://dearbornschools.org"> Return DPS Home page </a></li>
-<li><a href="numChooser"> Choose a different address </a></li>
-<li><a href="streetChooser"> Choose a different street </a></li>
+<li><a href="streetChooser"> Start Over </a></li>
 
 
 	</ul>

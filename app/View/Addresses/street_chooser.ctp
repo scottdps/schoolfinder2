@@ -36,30 +36,43 @@
 
 
 
-
-
-
-
+   
 
 <div class="addresses form">
-<?php echo $this->Form->create('Address', array('action' => 'numChooser'));
+        <div class="SchoolMessage">Dearborn School Finder</div>
+        <div class="SchoolMessageSm">
+        Type your street name in the text box.  
+        <br>If you live at 18700 Audette type the word <strong>audette</strong>. (Capitolization does not matter)
+        <br>Select it when it appears in the list, then click "Next->"
+        </div>
+    <?php
+        echo $this->Form->create('Address', array('action' => 'numChooser'));
 ?>
 	<fieldset>
 		<legend><?php  echo __(''); ?></legend>
 	<?php
         echo "<table border='0'><tr>";
         echo "<td>";
-        echo $this->Form->input('Enter your street name',array('type' => 'text','class' => 'textF2','id' =>'street', 'name' => 'streetName'));
+       
+        
+        echo $this->Form->input('',array('type' => 'text','class' => 'textF2','id' =>'street', 'name' => 'streetName'));
+        
+        
         echo $this->Form->input('StreetID',array('type' => 'hidden',  'id' =>'streetID','name' => 'streetID' ));
         echo "</td>";
         echo "<td>";
         echo "</td></tr></table>";
        
-       
+        
 	?> 
 
 	</fieldset>
-        <?php echo $this->Form->end(__('Next->')); ?>
+    
+        <?php 
+        
+        
+        
+        echo $this->Form->end(__('Next->')); ?>
     
 </div>
 

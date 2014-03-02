@@ -30,6 +30,14 @@ My changes at the top.  Scott  2/18/14
       font-family: Georgia, Times, "Times New Roman", serif;
 }
 
+
+.SchoolMessageSm {	
+      padding-top: 5px;  
+      width: 80%;
+      font-size:1.5em;
+      font-style:italic;
+      font-family: Georgia, Times, "Times New Roman", serif;
+}
 .schoolName {	
       padding-top: 20px;  
       font-size:1.5em;
@@ -37,6 +45,12 @@ My changes at the top.  Scott  2/18/14
 }
 
 .schoolPhone {
+        padding-left: 20px;
+        font-size: 1.25em;
+        font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.schoolWeb {
         padding-left: 20px;
         font-family: Georgia, Times, "Times New Roman", serif;
 }

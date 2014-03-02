@@ -116,7 +116,6 @@ public function addressAjax()
  * @return void
  */
 	public function index() {
-            echo  "ddddddrttrt";
 		$this->Address->recursive = 0;
 		$this->set('addresses', $this->Paginator->paginate());
 	}
